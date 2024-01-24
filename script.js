@@ -3,19 +3,13 @@ const infocDiv = document.getElementById("infoc");
 
 getUniversity = async () => {
   const countryName = document.getElementById("inp1").value;
-  const stateName = document.getElementById("inp1").value;
 
   try {
     const response = await fetch(
       `http://universities.hipolabs.com/search?country=${countryName}`
     );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
     const universities = await response.json();
-    console.log(universities.length);
     // Clear previous content in the infocDiv
     infocDiv.innerHTML = "";
 
