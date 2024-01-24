@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get/university@#$5a</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+      }
+      .box {
+        height: 300px;
+        width: 500px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      #inp1,
+      #inp2 {
+        height: 40px;
+        width: 90%;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 450;
+      }
+      #btn {
+        height: 30px;
+        width: 90px;
+        border-radius: 8px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+      }
+      #info {
+        height: 90vh;
+        width: 50vw;
+        border: 2px solid black;
+        overflow: scroll;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 4rem;
+      }
+      h2 {
+        width: 100%;
+        background-color: green;
+        text-align: center;
+        height: 40px;
+        color: white;
+        margin-top: -4rem;
+        padding-top: 5px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        height: fit-content;
+        width: auto;
+        padding: 5px 5px 5px 5px;
+        background-color: chocolate;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      #infoc {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 800px) {
+        .flex {
+          flex-direction: column;
+        }
+        #info {
+          height: 100vh;
+          width: 100vw;
+        }
+        h1 {
+          width: 100vw;
+          font-size: 25px;
+          text-align: none;
+        }
+        .box {
+          width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GET ALL UNIVERSITY AROUND YOU</h1>
+    <div class="flex">
+      <div class="box">
+        <h2>Write Informations</h2>
+        <input placeholder="Write Your Country  " type="text" id="inp1" />
+        <!-- <input placeholder="Write Your State  " type="text" id="inp2" /> -->
+
+        <button id="btn">Get Info</button>
+      </div>
+
+      <div class="" id="info">
+        <h1>Get Your Information Here</h1>
+        <div id="infoc"></div>
+      </div>
+    </div>
+
+    <!-- <main>
+      <div class="left">
+        <input placeholder="Write Your Country" type="text" id="inp1" />
+        <button id="btn">Get</button>
+      </div>
+      <div class="right" id="info"></div>
+    </main> -->
+  </body>
+  <script src="index.js"></script>
+</html>
