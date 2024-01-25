@@ -10,10 +10,8 @@ getUniversity = async () => {
     );
 
     const universities = await response.json();
-    // Clear previous content in the infocDiv
     infocDiv.innerHTML = "";
 
-    // Append details of each university to the infocDiv
     universities.forEach((university, index) => {
       const universityDetails = `
         <div>
